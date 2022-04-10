@@ -1,0 +1,42 @@
+﻿<Window x:Class="cheloSecret.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cheloSecret"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1100">
+    <Grid>
+        
+            <StackPanel HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox TextWrapping="Wrap" Height="50" Width="200" x:Name="textBox1"></TextBox>
+                    <TextBox x:Name="textBoxLenght" Height="50" Width="50">Lenght:</TextBox>
+                    <Button Height="50" Width="100" Click="btnConvert_Click">ConvertToBinary</Button>
+                    <TextBox TextWrapping="Wrap" Height="50" Width="500" x:Name="textBox2"></TextBox>
+                    <Button Height="50" Width="100" Click="btnConvert2_Click">ConvertToText</Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Height="50" Width="100" Click="btnOpenFile_Click">DIALOG</Button>
+                    <TextBox x:Name="textBoxPath" HorizontalAlignment="Left" Height="50" Width="500" FontSize="18" Background="AntiqueWhite">Путь:</TextBox>
+                    <Button Height="70" Width="100" Click="btnSteGO_Click">CODE IMAGE</Button>
+                    <Button Click="btnDecode_Click" Width="100" Height="70">DECODE IMAGE</Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="imaga1" Height="512" Width="512"></Image>
+                    <Image x:Name="imaga2" Height="512" Width="512"></Image>
+                </StackPanel>
+
+                <Button Click="btnSave_Click"  Width="200" Height="50">SAVE RESULT DIALOG</Button>
+
+                
+            </StackPanel>
+        
+    </Grid>
+</Window>
